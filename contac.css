@@ -1,0 +1,138 @@
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'Josefin Sans', sans-serif;
+   box-sizing: border-box;
+}
+.hero{
+   height: 100vh;
+   width: 100%;
+   background-image:url(fone.jpg);
+   background-size:cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+nav{
+   display:flex;
+   align-items:center;
+   justify-content: space-between;
+   padding-top:45px;
+   padding-left:8%;
+   padding-right:8% ;
+}
+nav ul li{
+   list-style-type:none;
+   display:inline-block;
+   padding:10px 25px;
+}
+nav ul li a{
+   color:white;
+   text-decoration:none;
+   font-weight: bold;
+   text-transform: capitalize;
+}
+nav ul li a:hover{
+   color:#f9004d;
+   transition:.4s;
+}
+.btn{
+   background-color: #f9004d;
+   color:white;
+   text-decoration: none;
+   border: 2px solid transparent;
+   font-weight: bold;
+   padding:10px 25px;
+   border-radius:30px;
+   transition: transform .4s;
+}
+.logo{
+   mix-blend-mode: color-burn;
+   border-radius:2px ;
+}
+
+.content{
+   padding-left: 20%;
+   padding-top: 10%;
+}
+
+.icons{
+   margin-top: 10px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.iconic a{
+   display: inline-flex;
+   height: 60px;
+   width: 60px;
+   text-decoration: none;
+   justify-content: center;
+   align-items: center;
+   font-size:25px;
+   background-color:  white;
+   margin: 10px;
+   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   transition: transform .4s;
+
+}
+.iconic a:hover{
+   transform: scale(1.2);
+}
+.icons a:nth-child(1){
+   color: #f44236;
+}
+.icons a:nth-child(2){
+   color: #25D366;
+}
+.icons a:nth-child(3){
+   color: #bc2a8d;
+}
+.icons a:nth-child(4){
+   color: #03a9f5;
+}
+
+.ico{
+   margin-top: 140px;
+   
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.ohio a{
+
+   display:flex;
+   height: 60px;
+   width: 380px;
+   text-decoration: none;
+   justify-content: center;
+   align-items: center;
+   font-size:25px;
+   background-color:  white;
+   margin: 15px;
+   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   transition: transform .4s;
+
+}
+.ohio a:hover{
+   transform: scale(1.1);
+}
+.ohio p{
+   background-color: white;
+}
+
+
+.basu{
+   font-size: 30px;
+   color: white;
+   margin-left: 20px;
+}
+.ico a:nth-child(1){
+   color:green;
+
+}

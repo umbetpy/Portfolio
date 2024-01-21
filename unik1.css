@@ -1,0 +1,96 @@
+*{
+   padding: 0;
+   margin: 0;
+   font-family: 'Josefin Sans', sans-serif;
+   box-sizing: border-box;
+}
+.hero{
+   height: 100vh;
+   width: 100%;
+   background-image: url(back.jpg);
+   background-size:cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+nav{
+   display:flex;
+   align-items:center;
+   justify-content: space-between;
+   padding-top:45px;
+   padding-left:8%;
+   padding-right:8% ;
+}
+nav ul li{
+   list-style-type:none;
+   display:inline-block;
+   padding:10px 25px;
+}
+nav ul li a{
+   color:white;
+   text-decoration:none;
+   font-weight: bold;
+   text-transform: capitalize;
+}
+nav ul li a:hover{
+   color:#f9004d;
+   transition:.4s;
+}
+.btn{
+   background-color: #f9004d;
+   color:white;
+   text-decoration: none;
+   border: 2px solid transparent;
+   font-weight: bold;
+   padding:10px 25px;
+   border-radius:30px;
+   transition: transform .4s;
+}
+
+.content{
+   position:absolute;
+   top: 30%;
+   left:40%;
+   translate: translateY(-50%);
+   text-align: center;
+}
+.content2{
+   position: absolute;
+   top:60%;
+   left:25%;
+   text-align: center;
+}
+.content3{
+   position: absolute;
+   top:70%;
+   left:60%;
+}
+h1{
+   color: white;
+}
+h4{
+   color:white;
+}
+.design{
+   margin-top: -470px;
+   padding-left:59%;
+   padding-right: 5%;
+}
+.solo{
+   font-weight: bold;
+   color:white;
+   padding-right: 43%;
+   padding-left: 5%;
+   padding-top: 1%;
+   margin-top: -320px ;
+   font-size:15px;
+}
+.err{
+   text-align: center;
+}
+.tre{
+   margin-top:70%;
+}
+.logo{
+   mix-blend-mode: color-burn;
+   border-radius:2px ;
+}

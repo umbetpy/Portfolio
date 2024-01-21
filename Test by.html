@@ -1,0 +1,155 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width:device-width, initial-scale1.0">
+    <title> test by Y </title>
+    <style>
+        .container{
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 60%;
+            padding: 20px;
+            display: none;
+        }
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        1+1=?<hr>
+        <input type="radio" name="question1">3<br>
+        <input type="radio" name="question1">11<br>
+        <input type="radio" name="question1" id="correct1">2<br>
+        <button class="next" onclick="next(1)"> Next </button>
+    </div>
+
+    <div class="container">
+        In which continent is Mount Alatau located? <hr>
+        <input type="radio" name="question2" id="correct2"> Eurasia <br>
+        <input type="radio" name="question2"> Antraktida <br>
+        <input type="radio" name="question2"> Australia <br>
+        <button class="next" onclick="next(2)"> Next </button>
+    </div>
+
+    <div class="container">
+        In which country is the World Cup being held in 2022?<hr>
+        <input type="radio" name="question3"> Russia <br>
+        <input type="radio" name="question3" id="correct3"> Qatar <br>
+        <input type="radio" name="question3"> Kazakhstan <br>
+        <input type="radio" name="question3"> Germany <br>
+        <button class="next" onclick="next(3)"> Next </button>
+    </div>
+    <div class="container">
+        When did the Republic of Kazakhstan gain independence?<hr>
+        <input type="radio" name="question4"> 1945 <br>
+        <input type="radio" name="question4" id="correct4"> 1991 <br>
+        <input type="radio" name="question4"> 1919 <br>
+        <button class="next" onclick="next(4)"> Next </button> </button>
+    </div>
+    <div class="container">
+        Which of the following is the season after winter? <hr>
+        <input type="radio" name="question5"> Autumn <br>
+        <input type="radio" name="question5"> Summer <br>
+        <input type="radio" name="question5" id="correct5"> Spring <br>
+        <button class="next" onclick="next(5)"> Next </button>
+    </div>
+    <div class="container">
+        The animal with the longest neck in the world<hr>
+        <input type="radio" name="question6"> Giraffe <br>
+        <input type="radio" name="question6" id="correct6"> Crocodile <br>
+        <input type="radio" name="question6"> Swan <br>
+        <input type="radio" name="question6"> Cangaroo <br>
+        <button class="next" onclick="next(6)"> Next </button>
+    </div>
+    <div class="container">
+        What does HTML stand for? <hr>
+        <input type="radio" name="question7"> Hyper Text Markup Language <br>
+        <input type="radio" name="question7"> Home Tool Markup Language <br>
+        <input type="radio" name="question7" id="correct7"> Hyperlinks and Text Markup Language <br>
+        <button class="next" onclick="next(7)"> Next </button>
+    </div>
+    <div class="container">
+        1040+1040+10+10=? <hr>
+        <input type="radio" name="question8"> 3000 <br>
+        <input type="radio" name="question8" id="correct8"> 2100 <br>
+        <input type="radio" name="question8"> 3100 <br>
+        <input type="radio" name="question8"> 2010 <br>
+        <button class="next" onclick="next(8)"> Next </button>
+    </div>
+    <div class="container">
+        In what year was the National University named after Abai founded?<hr>
+        <input type="radio" name="question9" id="correct9"> 1928 <br>
+        <input type="radio" name="question9"> 1982 <br>
+        <input type="radio" name="question9"> 1919 <br>
+        <input type="radio" name="question9"> 2022 <br>
+        <button class="next" onclick="next(9)"> Next </button>
+    </div>
+    <div class="container">
+        The country takes the 9th place in the world in terms of land area <hr>
+        <input type="radio" name="question10"> USA <br>
+        <input type="radio" name="question10"> Korea <br>
+        <input type="radio" name="question10" id="correct10"> Kazakhstan <br>
+        <input type="radio" name="question10"> Brazil <br>
+        <button onclick="result()"> Get result </button>
+    </div>
+    
+
+    
+    <script>
+
+        document.getElementsByClassName('container')[0].style.display = "block";
+
+        function next(id) {
+            document.getElementsByClassName('container')[id-1].style.display = "none";
+            document.getElementsByClassName('container')[id].style.display = "block";
+            document.getElementsByClassName('container')[id].style.display = "block";
+            document.getElementsByClassName('container')[id].style.display = "block";
+            document.getElementsByClassName('container')[id].style.display = "block";
+            document.getElementsByClassName('container')[id].style.display = "block";
+            document.getElementsByClassName('container')[id].style.display = "block";
+            document.getElementsByClassName('container')[id].style.display = "block";
+            document.getElementsByClassName('container')[id].style.display = "block";
+        }
+        
+        function result() {
+            var score = 0;
+            if (document.getElementById('correct1').checked) {
+                score++;
+            }
+            if (document.getElementById('correct2').checked) {
+                score++;
+            }
+            if (document.getElementById('correct3').checked) {
+                score++;
+            }
+            if (document.getElementById('correct4').checked) {
+                score++;
+            }
+            if (document.getElementById('correct5').checked) {
+                score++;
+            }
+            if (document.getElementById('correct6').checked) {
+                score++;
+            }
+            if (document.getElementById('correct7').checked) {
+                score++;
+            }
+            if (document.getElementById('correct8').checked) {
+                score++;
+            }
+            if (document.getElementById('correct9').checked) {
+                score++;
+            }
+            if (document.getElementById('correct10').checked) {
+                score++;
+            }
+            alert ("Your score is: "+ score);
+        }
+
+    </script>
+</body>
+</html>
